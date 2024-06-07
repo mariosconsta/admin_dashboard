@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main_container {
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+/* HEADER CONTAINERS START */
+
+.header {
+  border: 3px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-column: 2/3;
+  align-items: center;
+}
+
+.search_bar {
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 30px minmax(350px, 550px);
+  grid-template-rows: 30px;
+}
+
+.search_bar input {
+  border-radius: 10px;
+}
+
+.profile_container {
+  display: grid;
+  grid-template-columns: repeat(2, 30px) min(150px, 250px);
+  column-gap: 15px;
+  justify-content: end;
+}
+
+.user_greet_container {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.user_greet_container #usr_avatar {
+  max-width: 100px;
+}
+
+.header_buttons {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.header_buttons ul,
+.header_buttons li {
+  list-style: none;
+}
+
+.header_buttons .header_btn {
+  background-color: aqua;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+}
+
+/* HEADER CONTAINERS ENDS */
+
+/* MAIN DASHBOARD BODY STARTS */
+
+.main_dashboard_body {
+  border: 5px solid cyan;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-column: 2/3;
+}
+.projects_container {
+  border: 5px solid pink;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.project_card {
+  border: 3px solid royalblue;
+  border-radius: 15px;
+  height: 200px;
+}
+
+.right_side_bar {
+  border: 5px solid salmon;
+  display: grid;
+}
+
+.trending_container .container {
+  display: grid;
+  row-gap: 25px;
+}
+/* .announcements_container .container .trending_card, */
+.right-sidebar-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 8px;
+  /* display: grid; */
+}
+
+/* MAIN DASHBOARD BODY ENDS */
+
+/* SIDEBAR STARTS */
+
+.left_sidebar_container {
+  border: 5px solid brown;
+  display: grid;
+  grid-row: 1/4;
+}
+
+.left_sidebar_container .container {
+  display: grid;
+  grid-template-columns: 50px 150px;
+  column-gap: 15px;
+}
+
+.container img,
+h2 {
+  grid-row: 1/2;
+}
+.left_sidebar_container .top_btn_container,
+.bottom_btn_container {
+  display: grid;
+  grid-template-columns: 50px 150px;
+  row-gap: 15px;
+}
+
+.top_btn_container,
+.bottom_btn_container,
+.container {
+  max-width: 360px;
+}
+
+.top_btn_container {
+  margin: 50px 0px 50px 0px;
+}
+/* Dashboard header and image on the top left */
+.left_sidebar_container img {
+  /* grid-row: 1/2; */
+  justify-self: start;
+  width: 50px;
+}
+
+.sidebar_btn {
+  border-radius: 15px;
+  height: 50px;
+  width: 100px;
+}

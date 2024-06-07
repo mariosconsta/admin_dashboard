@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="header">
+        <div class="search_bar">
+          <i class="glyphicon glyphicon-search"></i>
+          <input
+            type="text"
+            name="search_bar"
+            id="search_bar"
+            placeholder="Search..."
+          />
+        </div>
+        <div class="profile_container">
+          <i class="glyphicon glyphicon-bell"></i>
+          <i class="glyphicon glyphicon-user"></i>
+          <p for="user_name">Marios Constantinou</p>
+        </div>
+        <div class="user_greet_container">
+          <img src="icons/usr_avatar_placeholder.png" id="usr_avatar" />
+          <div class="user_greeting">
+            <p for="greeting">Hi there,</p>
+            <p for="user_name_greet">Marios Constantinou (@consta)</p>
+          </div>
+        </div>
+        <div class="header_buttons">
+          <button class="header_btn" id="new_btn">New</button>
+          <button class="header_btn" id="upload_btn">Upload</button>
+          <button class="header_btn" id="share_btn">Share</button>
+        </div>
+      </div>
+
+      <div class="main_dashboard_body">
+        <div class="projects_container">
+          <div class="project_card" id="dummy_proj_01">SOME CONTENT</div>
+          <div class="project_card" id="dummy_proj_02">SOME CONTENT</div>
+          <div class="project_card" id="dummy_proj_03">SOME CONTENT</div>
+          <div class="project_card" id="dummy_proj_04">SOME CONTENT</div>
+          <div class="project_card" id="dummy_proj_05">SOME CONTENT</div>
+          <div class="project_card" id="dummy_proj_06">SOME CONTENT</div>
+        </div>
+        <div class="right_side_bar">
+          <div class="announcements_container">
+            <h2>Announcements</h2>
+            <div class="container">
+              <div class="right-sidebar-card announcements-card">
+                ANNOUNCEMENT
+              </div>
+              <div class="right-sidebar-card announcements-card">
+                ANNOUNCEMENT
+              </div>
+              <div class="right-sidebar-card announcements-card">
+                ANNOUNCEMENT
+              </div>
+            </div>
+          </div>
+          <div class="trending_container">
+            <h2>Trending</h2>
+            <div class="container">
+              <div class="right-sidebar-card trendings_card">
+                <h3>Site Maintenace</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="right-sidebar-card trendings_card">
+                <h3>Site Maintenace</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="right-sidebar-card trendings_card">
+                <h3>Site Maintenace</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="left_sidebar_container">
+        <div class="container">
+          <img src="icons/dashboard.png" id="dashboard_icon_topleft" />
+          <h2>Dashboard</h2>
+        </div>
+        <!-- BUTTONS -->
+        <div class="top_btn_container">
+          <img src="icons/home-account.svg" alt="" srcset="" />
+          <button class="sidebar_btn">Home</button>
+          <img src="icons/profile_icon.svg" alt="" srcset="" />
+          <button class="sidebar_btn">Profile</button>
+          <img src="icons/message-badge.svg" alt="" srcset="" />
+          <button class="sidebar_btn">Messages</button>
+          <img src="icons/history.svg" alt="" srcset="" />
+          <button class="sidebar_btn">History</button>
+          <img src="icons/tasks_icon.svg" alt="" srcset="" />
+          <button class="sidebar_btn">Tasks</button>
+          <img src="icons/account-multiple.svg" alt="" srcset="" />
+          <button class="sidebar_btn">Communities</button>
+        </div>
+        <div class="bottom_btn_container">
+          <img src="icons/home-account.svg" alt="" srcset="" />
+          <button class="sidebar_btn">Settings</button>
+          <img src="icons/home-account.svg" alt="" srcset="" />
+          <button class="sidebar_btn">Support</button>
+          <img src="icons/home-account.svg" alt="" srcset="" />
+          <button class="sidebar_btn">Privacy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
